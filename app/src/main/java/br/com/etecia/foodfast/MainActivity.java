@@ -21,7 +21,7 @@ public class MainActivity extends AppCompatActivity {
     @Override
     public boolean onCreatePanelMenu(int featureId, @NonNull Menu menu) {
         MenuInflater inflater = getMenuInflater();
-        inflater.inflate(R.menu.menu, menu);
+        inflater.inflate(R.menu.personalizei, menu);
         return super.onCreatePanelMenu(featureId, menu);
 
     }
@@ -31,36 +31,27 @@ public class MainActivity extends AppCompatActivity {
     @Override
     public boolean onOptionsItemSelected(@NonNull MenuItem item) {
         switch (item.getItemId()) {
-            case R.id.mFav:
+            case R.id.mAmor:
                 Toast.makeText(getApplicationContext(),
-                        "Favoritei",
+                        "AMOR DA MINHA VIDA?",
                         Toast.LENGTH_SHORT).show();
                 break;
-            case R.id.mBuscar:
+            case R.id.mVoltar:
                 Toast.makeText(getApplicationContext(),
-                        "Busquei",
+                        "Ta querendo voltar?",
                         Toast.LENGTH_SHORT).show();
                 break;
-            case R.id.mConfig:
+            case R.id.mSend:
                 Toast.makeText(getApplicationContext(),
-                        "Configurei",
+                        "MANDOU ALGO AI",
                         Toast.LENGTH_SHORT).show();
                 break;
-            case R.id.mHistory:
+            case R.id.mJoia:
                 Toast.makeText(getApplicationContext(),
-                        "Historico",
+                        "TA BÃO?",
                         Toast.LENGTH_SHORT).show();
                 break;
-            case R.id.mInfo:
-                Toast.makeText(getApplicationContext(),
-                        "informações",
-                        Toast.LENGTH_SHORT).show();
-                break;
-            case R.id.mShare:
-                Toast.makeText(getApplicationContext(),
-                        "Compartilhei",
-                        Toast.LENGTH_SHORT).show();
-                break;
+
         }
         return super.onOptionsItemSelected(item);
     }

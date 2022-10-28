@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/mAmor"
+        android:icon="@drawable/ic_baseline_favorite"
+        android:title="Amor"
+        app:showAsAction="ifRoom"
+
+        />
+    <item
+        android:id="@+id/mVoltar"
+        android:icon="@drawable/ic_baseline_undo"
+        android:title="Voltar"
+        app:showAsAction="ifRoom"
+
+        />
+    <item
+        android:id="@+id/mSend"
+        android:icon="@drawable/ic_baseline_send"
+        android:title="Mandar"
+        app:showAsAction="ifRoom"
+
+        />
+    <item
+        android:id="@+id/mJoia"
+        android:icon="@drawable/ic_baseline_thumb_up_alt"
+        android:title="Bão?"
+        app:showAsAction="ifRoom"
+
+        />
+
+</menu>
