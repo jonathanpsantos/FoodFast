@@ -25,13 +25,15 @@ public class MainActivity extends AppCompatActivity {
 
     }
 
-    //ccriando o metodo para clilar nos itens do menu
+    //criando o metodo para clilar nos itens do menu
 
     @Override
     public boolean onOptionsItemSelected(@NonNull MenuItem item) {
         switch (item.getItemId()){
             case R.id.mFav:
-                Toast.makeText();
+                Toast.makeText(getApplicationContext(),
+                        "Favoritei",
+                        Toast.LENGTH_SHORT).show();
         }
         return super.onOptionsItemSelected(item);
     }
