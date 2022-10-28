@@ -16,11 +16,12 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
     }
+
     //inserindo o Menu na barra de aplicativos
     @Override
     public boolean onCreatePanelMenu(int featureId, @NonNull Menu menu) {
         MenuInflater inflater = getMenuInflater();
-        inflater.inflate(R.menu.menu,menu);
+        inflater.inflate(R.menu.menu, menu);
         return super.onCreatePanelMenu(featureId, menu);
 
     }
@@ -29,11 +30,37 @@ public class MainActivity extends AppCompatActivity {
 
     @Override
     public boolean onOptionsItemSelected(@NonNull MenuItem item) {
-        switch (item.getItemId()){
+        switch (item.getItemId()) {
             case R.id.mFav:
                 Toast.makeText(getApplicationContext(),
                         "Favoritei",
                         Toast.LENGTH_SHORT).show();
+                break;
+            case R.id.mBuscar:
+                Toast.makeText(getApplicationContext(),
+                        "Busquei",
+                        Toast.LENGTH_SHORT).show();
+                break;
+            case R.id.mConfig:
+                Toast.makeText(getApplicationContext(),
+                        "Configurei",
+                        Toast.LENGTH_SHORT).show();
+                break;
+            case R.id.mHistory:
+                Toast.makeText(getApplicationContext(),
+                        "Historico",
+                        Toast.LENGTH_SHORT).show();
+                break;
+            case R.id.mInfo:
+                Toast.makeText(getApplicationContext(),
+                        "informações",
+                        Toast.LENGTH_SHORT).show();
+                break;
+            case R.id.mShare:
+                Toast.makeText(getApplicationContext(),
+                        "Compartilhei",
+                        Toast.LENGTH_SHORT).show();
+                break;
         }
         return super.onOptionsItemSelected(item);
     }
